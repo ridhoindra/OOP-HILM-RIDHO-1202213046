@@ -18,13 +18,17 @@ public class Server {
 
         User user = new User();
         Database database = new Database();
-        database.insertMenu("menu");
+        database.insertMenu("Ketoprak");
+        database.insertMenu("Bakso");
+        database.insertMenu("Bubur");
+        // database.showMenu();
         System.out.println("Selamat Datang di restoran EAD");
         System.out.println("Silahkan Register terlebih dahulu");
         System.out.println("========================================");
         System.out.println("nama : "+user.nama);
-        System.out.println("nama : "+user.noHp);
+        System.out.println("no hp : "+user.noHp);
         System.out.println("========================================");
-
+        database.showMenu();
+        database.searchMenu(1);
     }
 }

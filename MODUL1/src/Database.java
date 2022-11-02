@@ -10,18 +10,34 @@ public class Database {
 
     // TODO Create Method to Search Menu from Database
 
-    ArrayList<S listMenu;
+    ArrayList<String> listMenu = new ArrayList<String>();
 
     public void insertMenu(String menu) {
-        // listMenu.add(menu);
-        System.out.println(menu);
+        listMenu.add(menu);
     }
 
-    public ArrayList showMenu() {
-        return listMenu;
+    // public void showMenu() {
+    //     for (int i =0;i<listMenu.size();i++){
+    //         System.out.println((i+1)+". "+listMenu.get(i));
+    //     }
+    // }
+    
+    public void showMenu() {
+        System.out.println("1. Menu\n2. Pilih Menu\n3. Keluar");
+        System.out.println("========================================");
     }
 
-    public static void searchMenu(String pilihan){
-        
+    public static void searchMenu(int pilihan){
+        System.out.println("Masukkan Pilihan : "+pilihan);
+        switch (pilihan) {
+            case 1:
+                // manggil file menu untuk ngeprint list menu makanan
+                break;
+            case 2:
+                // 
+                break;
+            default:
+                break;
+        }
     }
 }
