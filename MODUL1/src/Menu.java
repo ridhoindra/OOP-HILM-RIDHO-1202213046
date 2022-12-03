@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Menu {
 
     // TODO Create Attribute of Menu; Name, Category, and Price then Create Setter
@@ -5,15 +7,17 @@ public class Menu {
     public String kategoriMenu;
     public int price;
 
-    public void setKategoriMenu(String kategoriMenu) {
-        this.kategoriMenu = kategoriMenu;
+    ArrayList<String> listDetailMenu = new ArrayList<String>();
+
+    public void setKategoriMenu(String menu,String kategoriMenu) {
+        listDetailMenu.get
     }
 
     public void setNamaMenu(String namaMenu) {
-        this.namaMenu = namaMenu;
+        listDetailMenu.add(namaMenu);
     }
      
-    public void setPrice(int price) {
+    public void setPrice(String menu,int price) {
         this.price = price;
     }
 }

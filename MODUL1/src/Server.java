@@ -29,6 +29,6 @@ public class Server {
         System.out.println("no hp : "+user.noHp);
         System.out.println("========================================");
         database.showMenu();
-        database.searchMenu(1);
+        database.searchMenu("Bakso");
     }
 }
